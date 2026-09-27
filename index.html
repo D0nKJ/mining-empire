@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mining Empire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>⛏️ Mining Empire</h1>
+            <div id="stats">
+                <div class="stat">
+                    <span class="label">Gold:</span>
+                    <span class="value" id="gold">0</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Ore/sec:</span>
+                    <span class="value" id="ore-per-sec">0</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Workers:</span>
+                    <span class="value" id="worker-count">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="mine-section" class="section">
+                <h2>🏭 Mine</h2>
+                <button id="mine-btn" class="action-btn">Mine Gold (100 gold)</button>
+                <div id="workers-display" class="workers-grid"></div>
+            </section>
+
+            <section id="shop-section" class="section">
+                <h2>🛒 Shop</h2>
+                <div id="shop-items" class="shop-grid"></div>
+            </section>
+
+            <section id="merge-section" class="section">
+                <h2>🔀 Merge Workers</h2>
+                <div id="merge-info">Select 2 workers of the same tier to merge</div>
+                <div id="merge-display" class="workers-grid"></div>
+                <button id="merge-btn" class="action-btn" disabled>Merge Selected</button>
+            </section>
+
+            <section id="upgrades-section" class="section">
+                <h2>⚡ Upgrades</h2>
+                <div id="upgrades-display" class="upgrades-grid"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
